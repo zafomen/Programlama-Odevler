@@ -1,0 +1,27 @@
+def gelirGider():   
+    print("İşletme Karı Hesaplayan Programa Hoşgeldiniz")
+    print("İlk 6 Aylık Gelir ve Giderlerinizi Giriniz")
+    x=int(input("Yazılım Geliri = "))
+    y=int(input("Finansman Geliri = "))
+    z=int(input("Ürün Satış Geliri = "))
+    q=int(input("Çalışan Maaşları = "))
+    w=int(input("Kira Gideri = "))
+    e = int(input("Donanım Maliyeti = "))
+    kar1=(x+y+z)-(q+w+e)
+    print("İlk 6 Aylık Kar = " ,kar1)
+    print("Son 6 Aylık Gelir ve Giderlerinizi Giriniz")
+    x1=int(input("Yazılım Geliri = "))
+    y1=int(input("Sponsorluk Geliri = "))
+    z1=int(input("Ürün Satış Geliri = "))
+    k1=int(input("E-Ticaret Geliri = "))
+    q1=int(input("Çalışan Maaşları = "))
+    w1=int(input("Kira Gideri = "))
+    e1=int(input("Bakım Maliyeti = "))
+    kar2=(x1+y1+z1+k1)-(q1+w1+e1)
+    print("Son 6 Aylık Kar = " ,kar2)
+    if (kar1-kar2 > 5000):
+        print("İşletme Çok Karlı")
+    elif(1000<kar1-kar2<5000):
+        print("İşletme Karı Normal")
+    else:
+        print("İşletme Yeterince Karda Değil")
